@@ -1,5 +1,5 @@
 variable "compartment_ocid" {
-	default = "ocid1.compartment.oc1..uniqueid"
+	default = "ocid1.compartment.oc1..aaaaaaaau337m2maguz3zrssc4ie3jfkyfxalbpmgu2wglo26l7dg3nxmyaa"
 }
 
 variable "region" {
@@ -7,22 +7,16 @@ variable "region" {
 }
 
 variable "InstanceImageOCID" {
-  type = "map"
-  
   default = {
     // See https://docs.cloud.oracle.com/images/
     // Platform image "Oracle-Linux-7.5-2018.10.16-0"
-    "eu-frankfurt-1" = "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaaitzn6tdyjer7jl34h2ujz74jwy5nkbukbh55ekp6oyzwrtfa4zma"
-    "uk-london-1" = "ocid1.image.oc1.uk-london-1.aaaaaaaa32voyikkkzfxyo4xbdmadc2dmvorfxxgdhpnk6dw64fa3l4jh7wa"
-    "us-ashburn-1" = "ocid1.image.oc1.iad.aaaaaaaageeenzyuxgia726xur4ztaoxbxyjlxogdhreu3ngfj2gji3bayda"
-    "us-phoenix-1" = "ocid1.image.oc1.phx.aaaaaaaaoqj42sokaoh42l76wsyhn3k2beuntrh5maj3gmgmzeyr55zzrwwa"
     "ap-sydney-1" = "ocid1.image.oc1.ap-sydney-1.aaaaaaaaaba6jlgscasd7wdg6ly3z73dqzjxgrh5ubpbsbp2fnjl53pkrvnq"
   }
 }
 
 
 variable "ssh_public_key" {
-	default = "ssh-rsa <public_key_value>"
+	default = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQBOIhBTtoVfQL1x9d3JDgDAm4oen9Cy/f1FOsIDcpPQTImsHyjyd35dZGY0sihS5qF+AHbjXkuQKnf5Yo0mtszdukzB9lsFxgR6C8e8N55X3v1LhJZJkxJT1M+/LEewjiq40LHOWr5jannn/CJ4srJfVBlxTMX5AOCdi5vXt2ncNLNjW0iJ1U0q/g9PhqkGthPHzgHEMi3FuH4ttiXpAHlFPPxdqmP8EDC8D+U2HKj1siJs4ohglXdP/o32DkegNJugCU5t7JWVbC6f0BGvQEt2OFQLykWqv/mcXVKOOvUfxfRmqRBYw7TT0zHNH2dcZyS4Is4D58GVbGIQBVkEf5T/ rsa-key-20191120"
 }
 
 # Defines the number of instances to deploy
@@ -36,5 +30,5 @@ variable "InstanceShape" {
 
 # Specifies the Availability Domain
 variable "localAD" {
-    default = "<AD_name>"
+    default = "rrHb:AP-SYDNEY-1-AD-1"
 }
