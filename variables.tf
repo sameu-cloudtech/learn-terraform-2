@@ -3,7 +3,7 @@ variable "compartment_ocid" {
 }
 
 variable "region" {
-	default = "us-sydney-1"
+	default = "ap-sydney-1"
 }
 
 variable "InstanceImageOCID" {
